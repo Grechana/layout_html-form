@@ -10,144 +10,150 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <fieldset class="groups">
-      <legend>Personal information</legend>
-      <div class="form">
-        <label>
-          Surname:
-          <input 
-          type="text" 
-          name="Surname" 
-          required>
-        </label>
-      </div>
-      <div class="form">
-        <label>
-          Name:
-          <input 
-          type="text" 
-          pwname="Name">
-        </label>
-      </div>
-      <div class="form">
-        <label>
-          How old are You?
-          <input
-            type="number"
-            name="How old are You?"
-            value="12"
-            min="1"
-            max="100"
-          >
-        </label>
-      </div>
-      <div class="form">
-        <label>
-          Full date of birth:
-          <input type="date" name="Full date of birth :?">
-        </label>
-      </div>
-      <div class="formL">
-        <label>
-          I accept the term of the agreement
-          <input 
-          type="checkbox" 
-          name="How old are You?" 
-          required >
-        </label>
-      </div>
-    </fieldset>
+    <form action="http://localhost:8080" 
+    method="get" >
+      <fieldset class="groups">
+        <legend>Personal information</legend>
+        <div class="form">
+          <label>
+            Surname:
+            <input 
+            type="text" 
+            name="Surname" 
+            required>
+          </label>
+        </div>
+        <div class="form">
+          <label>
+            Name:
+            <input type="text" pwname="Name">
+          </label>
+        </div>
+        <div class="form">
+          <label>
+            How old are You?
+            <input
+              type="number"
+              name="How old are You?"
+              value="12"
+              min="1"
+              max="100"
+            >
+          </label>
+        </div>
+        <div class="form">
+          <label>
+            Full date of birth:
+            <input type="date" name="Full date of birth :?">
+          </label>
+        </div>
+        <div class="formL">
+          <label>
+            I accept the term of the agreement
+            <input 
+            type="checkbox" 
+            name="How old are You?" 
+            required >
+          </label>
+        </div>
+      </fieldset>
 
-    <fieldset class="groups">
-      <legend>Registration</legend>
-      <div class="form">
-        <label>
-          E-mail:
-          <input 
-          type="email" 
-          name="email" 
-          placeholder="email@example.com">
-        </label>
-      </div>
-      <div class="formL">
-        <label
-          >Password:
-          <input type="password" name="password" >
-        </label>
-      </div>
-    </fieldset>
+      <fieldset class="groups">
+        <legend>Registration</legend>
+        <div class="form">
+          <label>
+            E-mail:
+            <input 
+            type="email" 
+            name="email" 
+            placeholder="email@example.com">
+          </label>
+        </div>
+        <div class="formL">
+          <label
+            >Password:
+            <input type="password" name="password" >
+          </label>
+        </div>
+      </fieldset>
 
-    <fieldset class="groups">
-      <legend>An interesting fact about you!</legend>
-      <div class="form">
-        <label
-          >Do you love cats? <input type="radio" name="cats" > Yes
-          <input type="radio" name="cats" > No
-        </label>
-      </div>
-      <div class="form">
-        <label>
-          What is your favorite color?
-          <input type="color" value="000" >
-        </label>
-      </div>
-      <div class="form">
-        <label>
-          What time do you go to bed?
-          <input type="time" name="time" >
-        </label>
-      </div>
-      <div class="form">
-        <label>
-          What are your favoirite brand of cars?
-          <select name="cars" multiple>
-            <option value="Lada">Lada</option>
-            <option value="BMW">BMW</option>
-            <option value="AUDI">Audi</option>
-          </select>
-        </label>
-      </div>
-      <div class="formL">
-        <label>
-          How do you rate our work?
-          <input 
-          type="range" 
-          value="1" 
-          min="1" 
-          max="10" 
-          required >
-        </label>
-      </div>
-    </fieldset>
+      <fieldset class="groups">
+        <legend>An interesting fact about you!</legend>
+        <div class="form">
+          <label
+            >Do you love cats? 
+            <label>
+              <input type="radio" name="cats" > Yes
+            </label>
+            <label>
+              <input type="radio" name="cats" > No
+            </label>
+          </label>
+        </div>
+        <div class="form">
+          <label>
+            What is your favorite color?
+            <input type="color" value="000" >
+          </label>
+        </div>
+        <div class="form">
+          <label>
+            What time do you go to bed?
+            <input type="time" name="time" >
+          </label>
+        </div>
+        <div class="form">
+          <label>
+            What are your favoirite brand of cars?
+            <select name="cars" multiple>
+              <option value="Lada">Lada</option>
+              <option value="BMW">BMW</option>
+              <option value="AUDI">Audi</option>
+            </select>
+          </label>
+        </div>
+        <div class="formL">
+          <label>
+            How do you rate our work?
+            <input 
+              type="range" 
+              value="1" 
+              min="1" 
+              max="10" 
+              required
+            >
+          </label>
+        </div>
+      </fieldset>
 
-    <fieldset class="groups">
-      <legend>Additional info:</legend>
-      <div class="form">
-        <label>
-          Comments:
-          <textarea
-            name="Comments"
-            cols="20"
-            rows="2"
-            minlength="10"
-            maxlength="150"
-          >
-          </textarea>
-        </label>
-      </div>
-      <div class="formL">
-        <label>
-          Would you recommend us?
-          <select>
-            <option>yes</option>
-            <option>no</option>
-          </select>
-        </label>
-      </div>
-    </fieldset>
+      <fieldset class="groups">
+        <legend>Additional info:</legend>
+        <div class="form">
+          <label>
+            Comments:
+            <textarea
+              name="Comments"
+              cols="20"
+              rows="2"
+              minlength="10"
+              maxlength="150"
+            >
+            </textarea>
+          </label>
+        </div>
+        <div class="formL">
+          <label>
+            Would you recommend us?
+            <select>
+              <option>yes</option>
+              <option>no</option>
+            </select>
+          </label>
+        </div>
+      </fieldset>
 
-    <button type="submit">Submit</button>
-
+      <button type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
